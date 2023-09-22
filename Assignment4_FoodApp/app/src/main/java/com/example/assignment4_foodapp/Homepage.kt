@@ -82,46 +82,4 @@ fun homepage(navController: NavController){
 
 }
 
-/*@OptIn(ExperimentalMaterial3Api::class)
-navController: NavController
-navController.navigate(screen.second.route)
-@Composable
-fun simpleTextField(navController: NavController){
-    var text by remember{ mutableStateOf("") }
-    var text1 by remember{ mutableStateOf("") }
-    Column(modifier= Modifier
-        .fillMaxSize(),horizontalAlignment= Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center){
-        Spacer(modifier= Modifier.height(300.dp))
-        TextField(value = text, onValueChange={it -> text = it}, label ={ Text(text="User Name") },
-            modifier= Modifier
-                .fillMaxWidth()
-                .padding(16.dp))
-
-        TextField(value = text1, onValueChange={it -> text1 = it}, label ={ Text(text="Password") },
-            visualTransformation = PasswordVisualTransformation(),
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-            modifier= Modifier
-                .fillMaxWidth()
-                .padding(16.dp))
-        Spacer(modifier= Modifier.height(80.dp))
-        submitbutton(navController: NavController)}
-
-}
-@Composable
-fun submitbutton(navController: NavController){
-    Column(modifier= Modifier.fillMaxSize(),verticalArrangement = Arrangement.Bottom) {
-        Button(
-            modifier = Modifier
-                .align(Alignment.CenterHorizontally)
-                .padding(20.dp),
-            onClick = {navController.navigate(screen.second.route)}) { Text(text = "LOGIN") }
-        Spacer(modifier= Modifier.height(50.dp))
-    }
-}*/
-@Composable
-@Preview(showBackground = true)
-fun pre(){
-    homepage(navController= rememberNavController())
-}
 
